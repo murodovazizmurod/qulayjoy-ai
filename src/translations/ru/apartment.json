@@ -1,0 +1,23 @@
+{
+  "rooms": "Комнаты",
+  "area": "Площадь",
+  "floor": "Этаж",
+  "finishing": "Ремонт",
+  "description": "Описание",
+  "amenities": "Коммунальные удобства",
+  "additional_info": "Дополнительная информация",
+  "contact": "Контакт",
+  "location_on_map": "Расположение на карте",
+  "balcony": "Балкон",
+  "bathroom": "Ванная",
+  "built_year": "Год постройки",
+  "building_type": "Тип здания",
+  "ceiling_height": "Высота потолков",
+  "walls": "Стены",
+  "elevators": "Лифты",
+  "parking": "Парковка",
+  "gas": "Газ",
+  "heating": "Отопление",
+  "price_period": "/ месяц",
+  "owner": "Владелец"
+}

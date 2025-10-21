@@ -1,0 +1,138 @@
+:global {
+  .mantine-Button-root {
+    width: max-content;
+    min-height: 32px;
+    border-radius: 12px;
+    transition: all linear 170ms;
+    font-size: 15px;
+    padding: 0 18px;
+
+    // ---------------------
+    // size style
+
+    &[data-size='xs'] {
+      height: 32px;
+      font-size: 13px;
+      padding: 0 12px;
+    }
+
+    &[data-size='sm'] {
+      height: 38px;
+      font-size: 14px;
+      padding: 0 14px;
+    }
+
+    &[data-size='md'] {
+      height: 42px;
+      font-size: 15px;
+      padding: 0 16px;
+    }
+
+    &[data-size='lg'] {
+      height: 46px;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+
+    &[data-size='xl'] {
+      height: 50px;
+      font-size: 17px;
+      padding: 0 24px;
+    }
+
+    // ---------------------
+    // width
+    &[data-fullwidth='true'] {
+      width: 100%;
+    }
+
+    // ---------------------
+    // variant prop style
+
+    &[data-variant='filled'] {
+      color: var(--color-light);
+      background-color: var(--primary-dark);
+
+      &:hover {
+        background-color: var(--primary-dark);
+      }
+    }
+
+    &[data-variant='primary-outline'] {
+      color: var(--primary-dark);
+      border: 1px solid var(--primary-dark);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--primary-hover);
+      }
+    }
+
+    &[data-variant='outline'] {
+      color: #1f252e;
+      background-color: transparent;
+      border: 1px solid #e0e6eb;
+
+      &:hover {
+        background-color: #f3f5f7;
+      }
+    }
+
+    &[data-variant='secondary'] {
+      color: var(--color-dark);
+      background-color: transparent;
+      border: 1px solid var(--color-dark);
+
+      &:hover {
+        background-color: var(--secondary-900);
+      }
+    }
+
+    &[data-variant='text'] {
+      color: var(--color-dark);
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        background-color: #f3f5f7;
+      }
+    }
+
+    // ---------------------
+    // 🔹 Responsive tweaks
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 0 14px;
+      min-height: 36px;
+
+      &[data-size='lg'],
+      &[data-size='xl'] {
+        height: 42px;
+        font-size: 15px;
+        padding: 0 16px;
+      }
+
+      &[data-fullwidth='true'] {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+      padding: 0 12px;
+      min-height: 34px;
+
+      &[data-size='md'],
+      &[data-size='lg'],
+      &[data-size='xl'] {
+        height: 38px;
+        font-size: 14px;
+        padding: 0 14px;
+      }
+
+      &[data-fullwidth='true'] {
+        width: 100%;
+      }
+    }
+  }
+}

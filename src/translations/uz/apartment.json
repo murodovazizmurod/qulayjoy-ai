@@ -1,0 +1,23 @@
+{
+  "rooms": "Xonalari",
+  "area": "Maydoni",
+  "floor": "Qavati",
+  "finishing": "Tamiri",
+  "description": "Tavsif",
+  "amenities": "Qulayliklar",
+  "additional_info": "Qo‘shimcha ma’lumot",
+  "contact": "Bog‘lanish",
+  "location_on_map": "Xaritadagi joylashuvi",
+  "balcony": "Balkon",
+  "bathroom": "Vanna",
+  "built_year": "Qurilgan yili",
+  "building_type": "Bino turi",
+  "ceiling_height": "Shift balandligi",
+  "walls": "Devorlar",
+  "elevators": "Liftlar",
+  "parking": "Avtoturargoh",
+  "gas": "Gaz",
+  "heating": "Isitish",
+  "price_period": "/ oy",
+  "owner": "Uy egasi"
+}

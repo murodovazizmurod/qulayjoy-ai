@@ -1,0 +1,46 @@
+.item_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0;
+}
+
+:global {
+  .mantine-InputBase-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content !important;
+    padding: 0 10px !important;
+    border-radius: 8px;
+    height: 41.5px;
+    border: 1px solid #e0e6eb !important;
+  }
+
+  .mantine-Combobox-dropdown {
+    display: flex;
+    justify-content: flex-start;
+    padding: 6px 4px;
+    width: max-content !important;
+    border-radius: 12px;
+  }
+
+  .mantine-Combobox-options {
+    width: 100%;
+  }
+}
+
+.menu_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.flag {
+  width: 20px;
+  height: 12px;
+  border-radius: 2px;
+}

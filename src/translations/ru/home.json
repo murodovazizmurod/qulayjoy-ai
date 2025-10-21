@@ -1,0 +1,39 @@
+{
+  "hero_title": "Найти квартиру для студентов в Ташкенте",
+  "hero_subtitle": "Аренда по лучшей цене и условиям",
+  "filterbar_title": "Найдите для себя комфортный дом",
+  "all_apartments_list": "Список всех объектов аренды",
+  "month": "месяц",
+  "view_details": "Подробнее",
+  "more": "еще",
+  "ai_search_title": "Поиск с помощью ИИ",
+  "ai_search_placeholder": "например: \"квартира рядом с метро\"",
+  "ai_search_description": "Опишите, что вы ищете, естественным языком",
+  "ai_search_examples": "Попробуйте эти примеры:",
+  "ai_search_processing": "ИИ анализирует ваш запрос...",
+  "ai_search_results": "Результаты поиска",
+  "ai_search_found": "Найдено {{count}} квартир, соответствующих вашим критериям",
+  "ai_search_criteria": "Критерии поиска:",
+  "ai_search_suggestions": "Предложения ИИ",
+  "ai_search_error": "Ошибка поиска",
+  "ai_search_error_message": "Не удалось обработать поиск. Пожалуйста, попробуйте еще раз.",
+  "ai_search_network_error": "Ошибка сети",
+  "ai_search_network_error_message": "Не удалось подключиться к ИИ сервису. Проверьте интернет соединение.",
+  "ai_search_button": "ИИ поиск",
+  "ai_search_view_results": "Посмотреть результаты",
+  "ai_suggestions": {
+    "specify_price_range": "Укажите диапазон цен",
+    "indicate_rooms": "Укажите количество комнат",
+    "specify_district": "Укажите название района",
+    "add_amenities": "Добавьте дополнительные удобства",
+    "specify_metro_station": "Укажите название станции метро",
+    "add_walking_distance": "Укажите расстояние пешком"
+  },
+  "backend_errors": {
+    "query_parameter_required": "Требуется параметр запроса",
+    "please_provide_search_query": "Пожалуйста, введите поисковый запрос",
+    "ai_processing_failed": "Обработка ИИ не удалась",
+    "failed_to_process_search_query": "Не удалось обработать поисковый запрос",
+    "ai_processing_failed_try_again": "Обработка ИИ не удалась. Пожалуйста, попробуйте еще раз."
+  }
+}

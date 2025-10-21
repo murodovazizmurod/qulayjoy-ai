@@ -1,0 +1,20 @@
+{
+  "no_connection_user": "Internet aloqasi yo‘q.",
+  "no_connection_server": "Server bilan ulanishda xatolik yuz berdi.",
+  "something_went_wrong": "Nimadir xato ketdi.",
+  "login_success": "Muvaffaqiyatli tizimga kirdingiz.",
+  "register_success": "Ro‘yxatdan o‘tish muvaffaqiyatli yakunlandi.",
+  "incorrect_credentials": "Foydalanuvchi nomi yoki parol noto‘g‘ri.",
+  "username_taken": "Bu foydalanuvchi nomi allaqachon olingan.",
+  "error_occurred": "Xatolik yuz berdi.",
+  "profile_updated": "Profil muvaffaqiyatli yangilandi.",
+  "logout_success": "Tizimdan muvaffaqiyatli chiqdingiz.",
+  "required": "Majburiy maydon",
+  "passwords_not_match": "Parollar mos emas",
+  "password_requirements": "Parol quyidagilarni o'z ichiga olishi kerak:",
+  "min_8_chars": "Kamida 8 ta belgi",
+  "one_uppercase": "Kamida 1 ta katta harf",
+  "one_number": "Kamida 1 ta raqam",
+  "welcome_back": "Xush kelibsiz! Iltimos, akkauntingizga kiring.",
+  "create_account": "Boshlash uchun akkauntingizni yarating."
+}

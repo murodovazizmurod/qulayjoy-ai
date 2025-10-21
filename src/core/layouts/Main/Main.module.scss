@@ -1,0 +1,16 @@
+* {
+  scrollbar-width: thin;
+}
+.container {
+  height: max-content;
+  min-height: 100dvh;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+}

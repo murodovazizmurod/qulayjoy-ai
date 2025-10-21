@@ -1,0 +1,78 @@
+/* Lazy loading styles */
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+/* Prevent layout shifts */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Critical CSS for above-the-fold content */
+.hero-section {
+  contain: layout style paint;
+}
+
+.card-grid {
+  contain: layout;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+}
+
+/* Reduce paint complexity */
+.modal-overlay {
+  will-change: opacity;
+}
+
+.button-hover {
+  will-change: transform;
+}
+
+/* Optimize scrolling */
+.scroll-container {
+  contain: layout style paint;
+  overflow-anchor: auto;
+}
+
+/* Critical resource hints */
+.preload-critical {
+  font-display: swap;
+}
+
+/* Optimize images */
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
+/* Reduce layout thrashing */
+.layout-stable {
+  contain: layout;
+}
+
+/* Optimize third-party content */
+.third-party-content {
+  contain: layout style paint;
+}

@@ -1,0 +1,21 @@
+@use 'base/theme' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  @include theme-light;
+}
+
+::selection {
+  color: var(--color-light);
+  background-color: rgb(26, 146, 216);
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: rgba(247, 252, 255, 1);
+}

@@ -1,0 +1,18 @@
+{
+  "district": "Район",
+  "metro_station": "Станция метро",
+  "price": "Цена",
+  "price_min": "Минимальная цена",
+  "price_max": "Максимальная цена",
+  "address": "Адрес",
+  "amenities": "Коммунальные удобства",
+  "look_from_window": "Вид из окна",
+  "balcony_type": "Тип балкона",
+  "bedroom_type": "Тип спальни",
+  "elevator_count": "Количество лифтов",
+  "gas_type": "Тип газа",
+  "heating": "Система отопления",
+  "parking": "Парковка",
+  "rooms_count": "Количество комнат",
+  "category": "Категория"
+}

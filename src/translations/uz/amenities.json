@@ -1,0 +1,33 @@
+{
+  "gas": {
+    "reservoir": "Ballon (rezervuar gazi)",
+    "main": "Markaziy gaz tarmog‘i",
+    "none": "Yo‘q"
+  },
+  "heating": {
+    "autonomous": "Avtonom",
+    "central": "Markaziy",
+    "none": "Yo‘q"
+  },
+  "parking": {
+    "closed": "Yopiq",
+    "garage": "Garaj",
+    "open": "Ochiq",
+    "underground": "Yer osti",
+    "none": "Yo‘q"
+  },
+  "rooms": {
+    "studio": "Studio"
+  },
+  "bedroom": {
+    "combined": "Birlashtirilgan",
+    "multi": "Bir nechta",
+    "separate": "Alohida"
+  },
+  "balcony": {
+    "balcony": "Balkon",
+    "loggia": "Lodjiya",
+    "terrace": "Terassa",
+    "none": "Yo‘q"
+  }
+}

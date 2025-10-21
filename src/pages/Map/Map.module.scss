@@ -1,0 +1,161 @@
+.layout {
+  display: flex;
+  align-items: flex-start;
+  .sidebar {
+    flex: 0 0 465px;
+    max-width: 465px;
+    padding: 20px 0 0 20px;
+  }
+
+  /* right side */
+  .map_area {
+    flex: 1;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+  }
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .sidebar {
+      max-width: 100%;
+      padding: 6px;
+    }
+
+    .map_area {
+      flex: 1;
+      width: 100%;
+      padding: 6px;
+    }
+  }
+}
+
+.filterbar {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #c5c9cc;
+
+  &_filter_btn_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 10px;
+
+    @media (max-width: 992px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+
+      & > * {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &_clear_btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    outline: none !important;
+  }
+
+  &_items_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &_btn {
+      display: flex;
+      justify-content: flex-start;
+      width: max-content;
+      text-align: left;
+      white-space: nowrap;
+
+      @media (min-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.fiedls_wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.aside {
+  width: 30%;
+  height: 465px;
+  max-height: 465px;
+  min-height: 465px;
+  opacity: 1;
+
+  --dur-open: 500ms;
+  --dur-close: 300ms;
+  --curve-open: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --curve-close: cubic-bezier(0.4, 0, 0.6, 1);
+
+  transition: transform var(--dur-close) var(--curve-close), height var(--dur-close) var(--curve-close),
+    min-height var(--dur-close) var(--curve-close), opacity var(--dur-close) var(--curve-close),
+    visibility 0s linear var(--dur-close);
+
+  &_space_wrapper {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+.aside_open {
+  height: 465px;
+  min-height: 465px;
+  opacity: 1;
+
+  transition: transform var(--dur-open) var(--curve-open), height var(--dur-open) var(--curve-open),
+    min-height var(--dur-open) var(--curve-open), opacity var(--dur-open) var(--curve-open), visibility 0s;
+}
+
+.aside_closed {
+  height: 0;
+  min-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
+}
+
+.contentTop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

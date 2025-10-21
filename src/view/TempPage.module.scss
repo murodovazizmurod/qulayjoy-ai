@@ -1,0 +1,14 @@
+.temp_page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100dvh - 70px);
+  gap: 18px;
+
+  &_title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "district": "Tuman",
+  "metro_station": "Metro bekati",
+  "price": "Narxi",
+  "price_min": "Quyi narx",
+  "price_max": "Yuqori narx",
+  "address": "Manzil",
+  "amenities": "Qulayliklar",
+  "look_from_window": "Oynadan ko'rinishi",
+  "balcony_type": "Balkon turi",
+  "bedroom_type": "Yotoqxona turi",
+  "elevator_count": "Liftlar soni",
+  "gas_type": "Gaz turi",
+  "heating": "Isitish tizimi",
+  "parking": "Avtoturargoh",
+  "rooms_count": "Xonalar soni",
+  "category": "Kategoriya"
+}

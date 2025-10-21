@@ -1,0 +1,285 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  padding: 16px;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(206, 207, 210, 0.5);
+  }
+}
+
+.vertical {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.imageSection {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.imageVertical {
+  width: 100%;
+  height: 16rem;
+
+  @media (min-width: 640px) {
+    height: 14rem;
+  }
+
+  @media (min-width: 768px) {
+    height: 18rem;
+  }
+}
+
+.imageHorizontal {
+  width: 100%;
+  height: 12rem;
+
+  @media (min-width: 768px) {
+    width: 20rem;
+    min-height: 16rem;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) {
+    width: 24rem;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s;
+
+  .card:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.tagsOverlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  z-index: 10;
+}
+
+.tag {
+  padding: 2px 10px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #bbf7d0;
+}
+
+.family {
+  background: #fff;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+.girls {
+  background: #fce7f3;
+  color: #9d174d;
+  border: 1px solid #fbcfe8;
+}
+.foreigners {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+}
+.partnership {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+}
+.boys {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: #4b5563;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #fff;
+    transform: scale(1.1);
+    color: #2563eb;
+  }
+}
+
+.favorited {
+  color: #ef4444 !important;
+
+  &:hover {
+    color: #dc2626 !important;
+  }
+}
+
+.content {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.contentTop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.2s;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  .card:hover & {
+    color: #2563eb;
+  }
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2563eb;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.pricePeriod {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.locationWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location,
+.subway {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.iconLocation {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.iconSubway {
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.amenityItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  transition: all 0.2s;
+  border: 1px solid #d9dfe4;
+
+  &:hover {
+    background: #f3f4f6;
+  }
+}
+
+.amenityIcon {
+  color: #6b7280;
+}
+
+.amenityMore {
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.buttonWrapper {
+  margin-top: 24px;
+}

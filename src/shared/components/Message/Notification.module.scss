@@ -1,0 +1,88 @@
+:global {
+  .mantine-Notification-root {
+    position: relative;
+    border-radius: 8px;
+    padding: 7px 6px 7px 12px;
+    min-height: 36px;
+    z-index: 500000;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(93, 99, 103, 0.15) 0px 2px 6px 2px;
+    background-color: #fff;
+  }
+
+  .mantine-Notification-root::before {
+    display: none;
+  }
+
+  .mantine-Notification-title {
+    margin: 0;
+  }
+
+  .mantine-Notification-closeButton {
+    color: #111;
+    border-radius: 50%;
+    transition: all ease-in 240ms;
+    background-color: transparent;
+  }
+
+  .mantine-Notifications-root {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    --notifications-container-width: max-content !important;
+  }
+}
+
+/* === GENERAL NOTIFICATION STYLES === */
+.notify_root {
+  color: #fff;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.notify_title,
+.notify_description {
+  font-weight: 450;
+  margin: 0;
+
+  @media (min-width: 1400px) {
+    font-size: 14px;
+  }
+}
+
+.notify_icon_wrapper {
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 0 0;
+  width: max-content;
+  border-radius: 12px;
+}
+
+.notify_icon {
+  width: 12px;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* === COLOR VARIANTS === */
+.success_root .notify_icon_wrapper {
+  background-color: #01c65a;
+}
+
+.error_root .notify_icon_wrapper {
+  background-color: #ff0000;
+}
+
+.warning_root .notify_icon_wrapper {
+  background-color: #feba17;
+}
+
+.info_root .notify_icon_wrapper {
+  background-color: #33a1e0;
+}

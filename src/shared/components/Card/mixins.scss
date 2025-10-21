@@ -1,0 +1,35 @@
+$breakpoints: (
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+// Responsive mixin
+@mixin respond($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` topilmadi!";
+  }
+}
+
+@mixin responsive-text($size, $weight: 400, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+
+  @if $color != null {
+    color: $color;
+  }
+
+  @include respond(md) {
+    font-size: $size - 2px;
+  }
+
+  @include respond(xs) {
+    font-size: $size - 4px;
+  }
+}

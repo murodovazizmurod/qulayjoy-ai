@@ -1,0 +1,89 @@
+// @mixin theme-light {
+//   --light-color: #fdfafa;
+
+//   --primary-color-100: #d8b4a0;
+//   --primary-color-200: #daad95;
+//   --primary-color-700: #d89a79;
+//   --primary-color-900: #d77844;
+
+//   --secondary-color-100: #a8c4a2;
+//   --secondary-color-200: #a8c4a2;
+//   --secondary-color-300: #a8c4a2;
+//   --secondary-color-400: #a8c4a2;
+//   --secondary-color-500: #9cc393;
+//   --secondary-color-600: #99c190;
+//   --secondary-color-700: #89bf7b;
+//   --secondary-color-800: #8ac17f;
+//   --secondary-color-900: #76b668;
+
+//   --accent-color-200: #e6a8a1;
+//   --accent-color-300: #e6a8a1;
+//   --accent-color-400: #e6a8a1;
+//   --accent-color-500: #e6a8a1;
+//   --accent-color-600: #e6a8a1;
+//   --accent-color-700: #e8857a;
+//   --accent-color-800: #da756a;
+//   --accent-color-900: #e6a8a1;
+
+//   --dark-color: #3c3c3c;
+
+//   --support-color: #f1d8c2;
+
+//   --body-background-color: #c7bdb6;
+// }
+
+@mixin theme-light {
+  /* Neutral (background, light, dark) */
+  --color-light: #fcfcfc;
+  --color-dark: #3c3c3c;
+  --color-body-bg: #f7fcff;
+  --color-support: #f1d8c2;
+
+  /* Primary (Blue shades) */
+  --primary-light: #e0f2ff;
+  --primary-medium: #b3e0ff;
+  --primary-dark: #238be6;
+  --primary-hover: rgba(26, 163, 255, 0.15);
+
+  /* Secondary (Green shades) */
+  --secondary-light: #99d9b4;
+  --secondary-medium: #80d0a2;
+  --secondary-dark: #66b386;
+  --secondary-hover: rgba(128, 208, 162, 0.15);
+
+  /* Accent (Red / Coral shades) */
+  --accent-light: #ff9999;
+  --accent-medium: #ff8080;
+  --accent-dark: #ff6666;
+  --accent-hover: rgba(255, 128, 128, 0.15);
+
+  /*  (Orange shades) */
+  --orange-light: #fff3e6;
+  --orange-medium: #ffe0cc;
+  --orange-dark: #ffcc99;
+  --orange-hover: rgba(255, 153, 51, 0.15);
+
+  /* Success (Green shades) */
+  --success-light: #e6f9ed;
+  --success-medium: #c0f0d2;
+  --success-dark: #99e6b8;
+  --success-hover: rgba(77, 211, 132, 0.15);
+
+  /* Purple (Ppurple shades) */
+  --purple-light: #f0e6ff;
+  --purple-medium: #d1b3ff;
+  --purple-dark: #b380ff;
+  --purple-hover: rgba(102, 51, 153, 0.15);
+
+  /* Dark (Gray scale) */
+  --dark-light: #f2f2f2;
+  --dark-medium: #d9d9d9;
+  --dark-dark: #bfbfbf;
+  --dark-hover: rgba(64, 64, 64, 0.15);
+
+  /* Light (Gray scale inverse) */
+  --light-light: #ffffff;
+  --light-medium: #fafafa;
+  --light-dark: #f5f5f5;
+  --light-hover: rgba(235, 235, 235, 0.5);
+}

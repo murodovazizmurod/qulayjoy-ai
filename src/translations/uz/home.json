@@ -1,0 +1,39 @@
+{
+  "hero_title": "Toshkentda talabalar uchun kvartira toping",
+  "hero_subtitle": "Eng yaxshi narx va shart-sharoitlarda ijara",
+  "filterbar_title": "O'zingizga qulay uyni toping",
+  "all_apartments_list": "Barcha ijaralar ro'yxati",
+  "month": "oyiga",
+  "view_details": "Batafsil",
+  "more": "qo'shimcha",
+  "ai_search_title": "AI yordamida qidiruv",
+  "ai_search_placeholder": "masalan: \"metro yaqinidagi kvartira\"",
+  "ai_search_description": "Tabiiy til bilan nima qidirayotganingizni tasvirlang",
+  "ai_search_examples": "Bu misollarni sinab ko'ring:",
+  "ai_search_processing": "AI sizning so'rovingizni tahlil qilmoqda...",
+  "ai_search_results": "Qidiruv natijalari",
+  "ai_search_found": "Sizning mezonlaringizga mos {{count}} ta kvartira topildi",
+  "ai_search_criteria": "Qidiruv mezonlari:",
+  "ai_search_suggestions": "AI tavsiyalari",
+  "ai_search_error": "Qidiruv xatosi",
+  "ai_search_error_message": "Qidiruvni qayta ishlash imkoni yo'q. Iltimos, qayta urinib ko'ring.",
+  "ai_search_network_error": "Tarmoq xatosi",
+  "ai_search_network_error_message": "AI xizmatiga ulanib bo'lmadi. Iltimos, internet aloqangizni tekshiring.",
+  "ai_search_button": "AI qidiruv",
+  "ai_search_view_results": "Natijalarni ko'rish",
+  "ai_suggestions": {
+    "specify_price_range": "Narx oralig'ini belgilang",
+    "indicate_rooms": "Kerakli xonalar sonini ko'rsating",
+    "specify_district": "Tuman nomini belgilang",
+    "add_amenities": "Qo'shimcha imkoniyatlarni qo'shing",
+    "specify_metro_station": "Metro bekati nomini ko'rsating",
+    "add_walking_distance": "Yurish masofasini belgilang"
+  },
+  "backend_errors": {
+    "query_parameter_required": "Qidiruv parametri talab qilinadi",
+    "please_provide_search_query": "Iltimos, qidiruv so'rovini kiriting",
+    "ai_processing_failed": "AI qayta ishlash muvaffaqiyatsiz",
+    "failed_to_process_search_query": "Qidiruv so'rovini qayta ishlash muvaffaqiyatsiz",
+    "ai_processing_failed_try_again": "AI qayta ishlash muvaffaqiyatsiz. Iltimos, qayta urinib ko'ring."
+  }
+}

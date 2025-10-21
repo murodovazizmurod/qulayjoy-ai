@@ -1,0 +1,33 @@
+{
+  "gas": {
+    "reservoir": "Баллонный газ (резервуар)",
+    "main": "Центральный газопровод",
+    "none": "Нет"
+  },
+  "heating": {
+    "autonomous": "Автономное",
+    "central": "Центральное",
+    "none": "Нет"
+  },
+  "parking": {
+    "closed": "Закрытая",
+    "garage": "Гараж",
+    "open": "Открытая",
+    "underground": "Подземная",
+    "none": "Нет"
+  },
+  "rooms": {
+    "studio": "Студия"
+  },
+  "bedroom": {
+    "combined": "Совмещённый",
+    "multi": "Несколько",
+    "separate": "Раздельный"
+  },
+  "balcony": {
+    "balcony": "Балкон",
+    "loggia": "Лоджия",
+    "terrace": "Терраса",
+    "none": "Нет"
+  }
+}

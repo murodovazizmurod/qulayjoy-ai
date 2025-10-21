@@ -1,0 +1,19 @@
+{
+  "profile": "Профиль",
+  "personal_info": "Личная информация",
+  "name": "Имя",
+  "surname": "Фамилия",
+  "username": "Имя пользователя",
+  "phone_number": "Номер телефона",
+  "role": "Роль",
+  "favorites": "Избранное",
+  "settings": "Настройки",
+  "buy_plan": "Купить тариф",
+  "dark_mode": "Тёмный режим",
+  "logout": "Выйти",
+  "your_plan": "Ваш тариф",
+  "valid_until": "Действителен до",
+  "update": "Обновить",
+  "password": "Пароль",
+  "confirm_password": "Подтвердите пароль"
+}

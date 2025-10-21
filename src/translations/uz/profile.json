@@ -1,0 +1,19 @@
+{
+  "profile": "Profil",
+  "personal_info": "Shaxsiy ma'lumotlar",
+  "name": "Ism",
+  "surname": "Familiya",
+  "username": "Foydalanuvchi nomi",
+  "phone_number": "Telefon raqami",
+  "role": "Rol",
+  "favorites": "Sevimlilar",
+  "settings": "Sozlamalar",
+  "buy_plan": "Tarif sotib olish",
+  "dark_mode": "Tungi rejim",
+  "logout": "Chiqish",
+  "your_plan": "Sizning tarifingiz",
+  "valid_until": "Amal qilish muddati",
+  "update": "Yangilash",
+  "password": "Parol",
+  "confirm_password": "Parolni tasdiqlang"
+}
