@@ -62,15 +62,15 @@ export const EfficientList = <T,>({
   );
 
   if (items.length <= maxVisibleItems) {
-    // For small lists, render all items normally
+    // For small lists, render all items normally without wrapper
     return (
-      <div className={className} style={style}>
+      <>
         {items.map((item, index) => (
           <React.Fragment key={index}>
             {renderItem(item, index)}
           </React.Fragment>
         ))}
-      </div>
+      </>
     );
   }
 

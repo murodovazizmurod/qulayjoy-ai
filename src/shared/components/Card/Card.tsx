@@ -25,7 +25,15 @@ const Card: React.FC<Types.IBase.IProps> = React.memo(({ values, layout, buttonC
   const { t } = useTranslation('home');
   
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
-  const coverImage = useMemo(() => values.images.find(image => image.is_cover), [values.images]);
+  const coverImage = useMemo(() => {
+    // First try to find cover image
+    let cover = values.images?.find(image => image.is_cover);
+    // If no cover image, use the first available image
+    if (!cover && values.images?.length > 0) {
+      cover = values.images[0];
+    }
+    return cover;
+  }, [values.images]);
 
   // local holat
   const [isFavorite, setIsFavorite] = useState(false);
@@ -87,7 +95,7 @@ const Card: React.FC<Types.IBase.IProps> = React.memo(({ values, layout, buttonC
         </div>
 
         <Image
-          src={coverImage?.image}
+          src={coverImage?.image || houseImg}
           fallbackSrc={houseImg}
           alt={`${values.title} image not found`}
           className={styles.image}
@@ -97,6 +105,13 @@ const Card: React.FC<Types.IBase.IProps> = React.memo(({ values, layout, buttonC
           style={{
             objectFit: 'cover',
             transition: 'transform 0.2s ease',
+          }}
+          onError={(e) => {
+            // If image fails to load, use fallback
+            const target = e.target as HTMLImageElement;
+            if (target.src !== houseImg) {
+              target.src = houseImg;
+            }
           }}
         />
       </div>
