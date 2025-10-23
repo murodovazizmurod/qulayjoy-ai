@@ -29,6 +29,13 @@
     "specify_metro_station": "Metro bekati nomini ko'rsating",
     "add_walking_distance": "Yurish masofasini belgilang"
   },
+  "ai_examples": [
+    "metro yaqinidagi kvartira",
+    "300 dollardan arzon studiya kvartira",
+    "Yunusobod tumanidagi 2 xonali kvartira",
+    "Wi-Fi va avtoturargohli kvartira",
+    "metroga 10 daqiqada arzon kvartira"
+  ],
   "backend_errors": {
     "query_parameter_required": "Qidiruv parametri talab qilinadi",
     "please_provide_search_query": "Iltimos, qidiruv so'rovini kiriting",

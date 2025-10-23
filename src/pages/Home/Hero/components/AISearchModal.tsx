@@ -322,13 +322,38 @@ const AISearchModal = ({ opened, onClose, onResults, onError }: AISearchModalPro
     }
   }, [error, isSearching, onError, t]);
 
-  const exampleQueries = [
-    "apartment near metro station",
-    "studio apartment under $300",
-    "2-room apartment in Yunusobod",
-    "apartment with Wi-Fi and parking",
-    "cheap apartment within 10 minutes of metro"
-  ];
+  // Get translated examples based on current language
+  const getExampleQueries = () => {
+    const currentLanguage = localStorage.getItem('i18nextLng') || 'uz';
+    
+    const examples: { [key: string]: string[] } = {
+      uz: [
+        "metro yaqinidagi kvartira",
+        "300 dollardan arzon studiya kvartira", 
+        "Yunusobod tumanidagi 2 xonali kvartira",
+        "Wi-Fi va avtoturargohli kvartira",
+        "metroga 10 daqiqada arzon kvartira"
+      ],
+      ru: [
+        "квартира рядом с метро",
+        "студия дешевле 300 долларов",
+        "2-комнатная квартира в Юнусабаде", 
+        "квартира с Wi-Fi и парковкой",
+        "дешевая квартира в 10 минутах от метро"
+      ],
+      en: [
+        "apartment near metro station",
+        "studio apartment under $300",
+        "2-room apartment in Yunusobod",
+        "apartment with Wi-Fi and parking", 
+        "cheap apartment within 10 minutes of metro"
+      ]
+    };
+    
+    return examples[currentLanguage] || examples['uz'];
+  };
+
+  const exampleQueries = getExampleQueries();
 
   const renderCriteria = (criteria: any) => {
     if (!criteria) return null;

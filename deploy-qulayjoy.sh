@@ -198,3 +198,4 @@ echo "   apt install certbot python3-certbot-nginx"
 echo "   certbot --nginx -d qulayjoy.uz -d www.qulayjoy.uz"
 echo ""
 echo "🎯 Deployment complete! Test your website now."
+

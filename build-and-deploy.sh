@@ -76,3 +76,4 @@ echo "   ./deploy-qulayjoy.sh"
 echo ""
 echo "3. Test your website:"
 echo "   http://qulayjoy.uz"
+
