@@ -24,10 +24,19 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  min-width: 300px;
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
 
   @media (min-width: 768px) {
     flex-direction: row;
     gap: 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
   }
 }
 

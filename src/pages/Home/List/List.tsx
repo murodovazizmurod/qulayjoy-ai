@@ -111,7 +111,6 @@ const List = React.memo(() => {
             )}
             itemHeight={layout === 'vertical' ? 300 : 200}
             maxVisibleItems={20}
-            className={styles.card_list}
           />
         </div>
       </section>

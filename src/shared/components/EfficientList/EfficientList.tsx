@@ -66,9 +66,9 @@ export const EfficientList = <T,>({
     return (
       <div className={className} style={style}>
         {items.map((item, index) => (
-          <div key={index}>
+          <React.Fragment key={index}>
             {renderItem(item, index)}
-          </div>
+          </React.Fragment>
         ))}
       </div>
     );

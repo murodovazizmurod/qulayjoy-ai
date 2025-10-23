@@ -82,10 +82,15 @@
 
 .horizontal_section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   width: 100%;
   transition: all linear 300ms;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 // modal style
